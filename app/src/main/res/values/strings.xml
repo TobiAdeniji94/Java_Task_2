@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Java_Task_2</string>
+    <string name="full_name">Name: Adeniji Ifeoluwatobi</string>
+    <string name="username">Username: Adeniji_Tobi</string>
+    <string name="email">Email: adenijitobi94@gmail.com</string>
+    <string name="hobbiesLikes">
+        <br>Hobbies\n</br>
+        <br>-Playing video games\n</br>
+        <br>-Coding\n</br>
+        <br>-Designing birthday cards\n</br>
+        \n
+        \n
+        <br>Likes\n</br>
+        <br>-Discussing football\n</br>
+        <br>-Reading\n</br>
+        \n
+        \n
+        <br>Dislikes\n</br>
+        <br>-Exercising\n</br>
+
+    </string>
+</resources>

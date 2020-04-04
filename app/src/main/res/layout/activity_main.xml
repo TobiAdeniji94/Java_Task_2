@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_nigerian_flag" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/ic_build_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/ic_cake_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/ic_call_end_black_24dp" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/profilePic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_notification_bell" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/flag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cached_black_24dp" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/full_name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/slack_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:fontFamily="monospace"
+        android:text="@string/username"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/start_ng_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:fontFamily="monospace"
+        android:text="@string/email"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slack_username"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_ng_email"
+        app:layout_constraintVertical_bias="0.12">
+
+        <TextView
+            android:id="@+id/hobbies"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:text="@string/hobbiesLikes"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
